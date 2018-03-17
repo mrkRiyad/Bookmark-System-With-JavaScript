@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bookmark System With JavaScript</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h1 class="text-center">Bookmark System</h1>
+                    <hr>
+                    <strong>Add Bookmark</strong>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Enter Title" id="title">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="url" class="form-control" placeholder="Enter URL" id="url">
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <button class="btn btn-info" id="save_btn" onclick="BookmarkSave()">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="alert alert-success">
+                    <strong><a href="#">Google</a></strong>
+                    <button type="button" class="close" onclick="DeleteBookmark()">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
