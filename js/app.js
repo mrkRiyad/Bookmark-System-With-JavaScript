@@ -14,7 +14,7 @@ function BookmarkSave(e) {
             title: title,
             url: url,
         };
-    }
+    
         if(localStorage.getItem('bookmarks') === null) {
             // default bookmark list
             var bookmarks = [];
@@ -27,8 +27,7 @@ function BookmarkSave(e) {
             localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
 
         }
-        console.log(title);
-        
+    }  
         InitialBookmark();
         clear();
     e.preventDefault();
