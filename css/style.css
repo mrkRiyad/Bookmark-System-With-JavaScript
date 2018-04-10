@@ -11,3 +11,13 @@ Version: 1.0
     color: inherit;
     text-decoration: none;
 }
+.empty_data {
+    font-weight: bold;
+    text-align: center;
+    color: #ddd;
+    font-size: 50px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
