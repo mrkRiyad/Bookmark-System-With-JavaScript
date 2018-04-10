@@ -6,7 +6,6 @@ Description: A bookmark system allow you to save url. After that you can visit t
 Technology: JavaScript, HTML5, CSS3, Bootstrap
 Version: 1.0
 */
-
 .alert strong a {
     color: inherit;
     text-decoration: none;
